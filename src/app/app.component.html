@@ -1,0 +1,106 @@
+  <nz-layout>
+      <nz-header>
+        <div nz-row>
+          <div nz-col nzSpan="4">
+            <div class="logo"></div>
+          </div>
+          <div nz-col nzSpan="16">
+            <ul nz-menu nzMode="horizontal">
+              <li nz-menu-item>Главная</li>
+              <li nz-menu-item>Календарь</li>
+              <li nz-menu-item>Тарифы и наличие мест</li>
+              <li nz-menu-item>Брони и заявки</li>
+              <li nz-menu-item>Турагентства</li>
+              <li nz-menu-item>Гостиница</li>
+            </ul>            
+          </div>
+          <div nz-col nzSpan="4" class="controls">
+            <i nz-icon nzType="home" nzTheme="outline"></i>
+            <nz-badge [nzCount]="9">
+              <i nz-icon nzType="bell" nzTheme="outline"></i>
+            </nz-badge>
+            <nz-avatar nzSize="large" nzIcon="user"></nz-avatar>
+          </div>
+        </div>
+      </nz-header>
+
+      <nz-content>
+        <div class="caption" nz-row>
+          <h1 class="title" nz-col nzSpan="6">Создание новой брони</h1>
+          
+          <div nz-col nzSpan="12">
+            <nz-steps>
+              <nz-step></nz-step>
+              <nz-step></nz-step>
+              <nz-step></nz-step>
+              <nz-step></nz-step>
+            </nz-steps>
+          </div>
+        </div>
+
+        <div class="innerContent">
+          <!-- Filters labels area -->
+          <div nz-row nzGutter="16" class="filterLabels">
+            <div nz-col nzSpan="4">Выберите источник</div>
+            <div nz-col nzSpan="4">Дата заезда</div>
+            <div nz-col nzSpan="4">Дата выезда</div>
+            <div nz-col nzSpan="4">Тарифный план</div>
+            <div nz-col nzSpan="4">Тип номера</div>
+          </div>
+
+          <!-- Filters area -->
+          <div nz-row nzGutter="16" class="filterInputs">
+            <div nz-col nzSpan="4">
+              <nz-select nzPlaceHolder="Выберите источник">
+                <nz-option nzLabel="Не выбрано" nzValue="null"></nz-option>
+              </nz-select>
+            </div>
+            <div nz-col nzSpan="4">
+              <nz-date-picker nzClassName="datePicker"></nz-date-picker>
+            </div>
+            <div nz-col nzSpan="4">
+              <nz-date-picker nzClassName="datePicker"></nz-date-picker>
+            </div>
+            <div nz-col nzSpan="4">
+              <nz-select nzPlaceHolder="Выберите источник">
+                <nz-option nzLabel="Все тарифы" nzValue="null"></nz-option>
+              </nz-select>
+            </div>
+            <div nz-col nzSpan="4">
+              <nz-select nzPlaceHolder="Выберите источник">
+                <nz-option nzLabel="Все типы номеров" nzValue="null"></nz-option>
+              </nz-select>
+            </div>
+            <div nz-col nzSpan="4">
+              <button nz-button nzBlock nzType="primary">Поиск</button>
+            </div>
+          </div>
+
+          <!-- Search results area -->
+          <div nz-row nzGutter="16" class="searchResults">
+            <div nz-col nzSpan="4">
+              <div class="rooms">
+                <div class="title">Номера</div>
+                <div class="content">
+                  <div class="empty">
+                    <i nz-icon nzType="plus" nzTheme="outline"></i>
+                    <div class="description">Добавьте номера, чтобы начать бронирование</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div nz-col nzSpan="20">
+              <div class="results">
+                <div class="empty">
+                  <i nz-icon nzType="calendar" nzTheme="outline"></i>
+                  <div class="description">Добавьте даты заезда-выезда,<br>чтобы начать бронирование</div>
+                </div>
+              </div>
+            </div>
+            
+            <div nz-col nzSpan="20" nzOffset="4"></div>
+          </div>
+        </div>
+      </nz-content>
+    </nz-layout>

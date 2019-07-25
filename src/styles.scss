@@ -1,0 +1,42 @@
+@import "styles/variables";
+
+html body {
+	background-color: $backgroundColor;
+	margin: 0;
+	color: $textColor;
+}
+
+nz-layout {
+	nz-header {
+		background-color: $workspaceColor;
+
+		ul.ant-menu {
+			li.ant-menu-item {
+				padding-top: 8px;
+				padding-bottom: 8px;
+			}
+		}
+
+		.controls {
+			text-align: right;
+			padding: 12px 0;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+
+			>* {
+				margin-left: 24px;
+			}
+		}
+	}
+
+	nz-content {
+		padding: 24px 50px;
+	}
+}
+
+nz-select,
+nz-date-picker,
+.datePicker {
+	width: 100%;
+}

@@ -1,0 +1,79 @@
+@import "../styles";
+
+.caption {
+	margin-bottom: 8px;
+
+	h1.title {
+		color: black;
+		font-size: 1.4em;
+		margin: 0 0 0 16px;
+	}
+}
+
+.innerContent {
+	background-color: $workspaceColor;
+	padding: 32px 16px;
+
+	.filterLebels {
+		margin-bottom: 8px;
+	}
+
+	.filterInputs {
+		margin-bottom: 24px;
+	}
+
+	.searchResults {
+		.rooms {
+			border: 1px solid $borderColor;
+			border-radius: 4px;
+			height: 180px;
+
+			.title {
+				text-align: center;
+				color: black;
+				padding: 16px;
+				background-color: $neutralColor;
+				border-bottom: 1px solid $borderColor;
+				font-weight: bold;
+			}
+
+			.content {
+				padding: 16px 0;
+
+				.empty {
+					text-align: center;
+
+					i {
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						border: 1px solid $borderColor;
+						display: flex;
+    					align-items: center;
+    					justify-content: center;
+    					margin: 0 auto 8px;
+					}
+				}
+			}
+		}
+
+		.results {
+			border: 1px solid $borderColor;
+			background-color: $neutralColor;
+			border-radius: 4px;	
+			min-height: 180px;
+			align-items: center;
+    		display: flex;
+    		justify-content: center;
+
+			.empty {
+				text-align: center;
+
+				i {
+					font-size: 40px;
+					margin-bottom: 8px;
+				}
+			}	
+		}
+	}
+}
